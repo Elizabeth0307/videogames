@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+  }
+  header {
+    background-color: #ffffff;
+    padding: 15px;
+  }
+  header ul {
+    float: right;
+    color: #5a073a;
+  }
+  header li {
+    display: inline-block;
+    padding: 0px 5px;
+  }
+  header p {
+    display: inline-block;
+  }
+  .heroImg {
+    background-color: #5a073a;
+    padding: 100px 15px;
+    color: #5a073a;
+  }
+  .content {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  button {
+    padding: 15px;
+    background-color: #5a073a;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+  }
+  footer {
+    background-color: #ffffff;
+    padding: 5px;
+    color: #1D566E;
+  }
+  footer ul {
+    list-style: none;
+    padding-left: 5px;
+  }
+  footer li {
+    display: inline-block;
+    padding: 0px 7px;
+  }
+  .heading {
+    text-align: center;
+    padding: 15px 5px;
+    font-size: 30px;
+    color: #1D566E;
+  }
+  /* My UX Skills Section */
+  .flexContainer {
+    display: flex;
+    padding: 60px 30px;
+    color: #1D566E;
+  }
+  .flexContainer div {
+    width: 33%;
+    padding: 25px;
+  }
+  
+  /* My Work Section */
+  .myWork {
+    padding: 60px 30px;
+    padding-top: 0;
+    background-color: #EBEBEB;
+    color: #1D566E;
+  }
+  .workGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 350px 350px 350px;
+    grid-template-areas:
+    "img1 content1"
+    "img2 content2"
+    "img3 content3"
+    ;
+  }
+  .workGrid img {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+  }
+  .img1 {
+    grid-area: img1;
+  }
+  .img2 {
+    grid-area: img2;
+  }
+  .img3 {
+    grid-area: img3;
+  }
+  .img1, .img2, .img3, .content1, .content2, .content3 {
+    padding: 80px;
+  }
+  .content1 {
+    grid-area: content1;
+  }
+  .content2 {
+    grid-area: content2;
+  }
+  .content3 {
+    grid-area: content3;
+  }
+
+#flexContainer {
+  grid-template-rows: 300px 300px 300x;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "user research"
+  "user interface design"
+  "web development"
+  ;
+}
+@media only screen and (max-width: 600px) {
+  .flexContainer {
+    flex-direction: column;
+    width: 100px;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "heading"
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
